@@ -14,7 +14,7 @@ Choroscope grew out of the Local Burden of Disease (LBD) project at IHME, and it
 
 ## What does the name mean?
 
-"Choroscope" is a synthetic word derived from the Greek χώρα (chora), "place," and σκoπέω (skopeo) "to look at, contemplate, or examine." Choroscope is about studying data as distributed over geography.
+"Choroscope" is a synthetic word derived from the Greek χώρα (_chora_), "place," and σκoπέω (_skopeo_) "to look at, contemplate, or examine." Choroscope is about studying data as distributed over geography.
 
 ## How can I use Choroscope to visualize my own geospatial data set?
 
