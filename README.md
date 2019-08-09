@@ -4,6 +4,10 @@
 
 Choroscope is a visualization platform for geospatial data. Created to showcase results for the [Local Burden of Disease (LBD)](http://www.healthdata.org/lbd) project at the [Institute for Health Metrics and Evaluation (IHME)](http://www.healthdata.org), Choroscope provides a flexible format for exploring and sharing data linked to geography.
 
+## What does the name mean?
+
+"Choroscope" is a synthetic word derived from the Greek χώρα (_chora_), "place," and σκoπέω (_skopeo_) "to look at, contemplate, or examine." Choroscope is about studying data as distributed over geography.
+
 ## How does Choroscope work?
 
 The platform ingests a geospatial data set with an accompanying configuration file specifying the shape of the data and details of how it should be displayed. A database creation tool, `choroscope-db`, builds a geospatial database from the data, and an application server, `choroscope-api`, makes it available as a web API. A frontend web application, `choroscope-app`, uses this API to display both choropleths and highly detailed image-like maps - for which pixel colorization is done in the browser with a custom WebGL renderer. The configuration language, defined in `choroscope-spec`, allows the addition of other visualizations, like line and bar graphs, to supplement the primary map-based view.
@@ -11,10 +15,6 @@ The platform ingests a geospatial data set with an accompanying configuration fi
 ## How did Choroscope come to be?
 
 Choroscope grew out of the Local Burden of Disease (LBD) project at IHME, and its features and design strongly reflect the needs of that project. Above all, LBD needed a flexible and open-ended tool to visualize a large number of data sets of differing shapes and with differing needs. As of this writing, the LBD application is being used to visualize population health estimates accompanying eight scientific publications, with many more in the works. Because of the tool's flexibility, we the developers of the software came to realize that the underlying platform could, in principle, be used to visualize _any_ compatible data set - it wasn't limited to LBD estimates or even health data. In the spirit of open sharing of information embraced by LBD, IHME, and the scientific community generally, we wanted to offer the core platform as open-source software so that others could use it to visualize their geospatial data sets, ultimately helping us all to better understand our world.
-
-## What does the name mean?
-
-"Choroscope" is a synthetic word derived from the Greek χώρα (_chora_), "place," and σκoπέω (_skopeo_) "to look at, contemplate, or examine." Choroscope is about studying data as distributed over geography.
 
 ## How can I use Choroscope to visualize my own geospatial data set?
 
