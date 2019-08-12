@@ -10,7 +10,9 @@ Choroscope is a visualization platform for geospatial data. Created to showcase 
 
 ## How does Choroscope work?
 
-The platform ingests a geospatial data set with an accompanying configuration file specifying the shape of the data and details of how it should be displayed. A database creation tool, `choroscope-db`, builds a geospatial database from the data, and an application server, `choroscope-api`, makes it available as a web API. A frontend web application, `choroscope-app`, uses this API to display both choropleths and highly detailed image-like maps - for which pixel colorization is done in the browser with a custom WebGL renderer. The configuration language, defined in `choroscope-spec`, allows the addition of other visualizations, like line and bar graphs, to supplement the primary map-based view.
+The platform ingests a "theme," a geospatial data set with an accompanying configuration file specifying the shape of the data and details of how it should be displayed. A database creation tool, `choroscope-db`, builds a geospatial database from the data, and an application server, `choroscope-api`, makes it available as a web API. A frontend web application, `choroscope-app`, uses this API to display both choropleths and highly detailed image-like maps - for which pixel colorization is done in the browser with a custom WebGL renderer. The configuration language, defined in `choroscope-spec`, allows the addition of other visualizations, like line and bar graphs, to supplement the primary map-based view.
+
+![Choroscope architecture diagram](./resources/choroscope-architecture-diagram.png)
 
 ## How did Choroscope come to be?
 
