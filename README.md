@@ -20,14 +20,14 @@ Choroscope grew out of the Local Burden of Disease (LBD) project at IHME, and it
 
 ## How can I use Choroscope to visualize my own geospatial data set?
 
-You can't just yet, but as the platform is published, we plan to provide reference documentation, tutorials, and demos to help you set it up to serve your own needs.
+So far two components of the platform, `choroscope-spec` and `choroscope-db`, have been published. Together, they'll allow you to create a Choroscope database from your dataset. Once the API server and frontend application are published, you'll be able to use the complete Choroscope platform to visualize your data.
 
 ## What are the components of the Choroscope platform, and what is the plan for publishing them?
 
 The plan is to publish the individual components of Choroscope in sequence, proceding conceptually from bottom to top:
 
 - [`choroscope-spec`](https://github.com/choroscope/choroscope-spec) (available now) defines the configuration language for the platform. Every data "theme" in Choroscope needs to provide a configuration file to describe the data and how it should be visualized.
-- `choroscope-db` (coming soon) is a Python-based utility that automates the creation of a geospatial ([PostGIS](http://postgis.net/)) database representing a data "theme." Though this database is intended primarily to serve as the data source for the frontend application, it may also be queried directly using PostGIS SQL, providing a powerful and open-ended way of exploring a geospatial data set.
+- [`choroscope-db`](https://github.com/choroscope/choroscope-db) (available now) is a Python-based utility that automates the creation of a geospatial ([PostGIS](http://postgis.net/)) database representing a data "theme." Though this database is intended primarily to serve as the data source for the frontend application, it may also be queried directly using PostGIS SQL, providing a powerful and open-ended way of exploring a geospatial data set.
 - `choroscope-api` is a NodeJS server that makes the data contained in a Choroscope database (as created by `choroscope-db`) available as a web API. Though mainly intended to serve the needs of the frontend application, the API could also be used by other custom applications.
 - `choroscope-app` is a frontend web application that visualizes the data provided by `choroscope-api`. Written in [TypeScript](http://www.typescriptlang.org/), the application leverages the mapping framework [Leaflet](https://leafletjs.com/) as well as a variety of other open-source technologies. It also provides a custom [WebGL-based renderer](https://github.com/ihmeuw/leaflet.tilelayer.glcolorscale) for visualizing pixel data.
 
